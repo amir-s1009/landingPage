@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+/* global style classes: */
+.mainContainer{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContainer .heading{
+  width: 100%;
+  text-align: center;
+  padding: 0px 25%;
+  font-size: 4.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(69, 1, 33);
+  background-color: rgb(254, 233, 236);
+  box-shadow: 0px 0px 50px 50px rgb(254, 233, 236);
+}
+

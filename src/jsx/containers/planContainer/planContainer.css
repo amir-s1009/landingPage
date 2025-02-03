@@ -1,0 +1,13 @@
+.planContainer{
+    width: 100%;
+    padding: 0px 100px;
+    gap: 50px;
+    margin-bottom: 200px;
+    background-image: linear-gradient(to top, white, rgba(254, 233, 236, 0.719));
+    box-shadow: 0px -50px 30px rgba(254, 233, 236, 0.719);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

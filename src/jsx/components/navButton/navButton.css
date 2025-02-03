@@ -1,0 +1,11 @@
+.navBtn{
+    background: none;
+    color:rgb(117, 117, 117);
+    font-size: 1rem;
+    margin: 0px 20px;
+    border:none;
+    cursor: pointer;
+}
+.navBtn:hover{
+    color:#151515;
+}

@@ -1,0 +1,21 @@
+.button{
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    padding: 15px 20px;
+    border:none;
+    cursor: pointer;
+}
+.primary-btn{
+  color:white;
+  background-image: linear-gradient(to bottom right, coral, rgb(209, 43, 145));
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+.primary-btn:hover{
+  background-image: linear-gradient(to bottom right, rgb(209, 43, 145), coral);
+}
+.secondary-btn{
+  color:rgb(209, 43, 145);
+  background-color:white;
+}
