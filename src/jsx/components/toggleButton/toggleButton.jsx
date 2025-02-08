@@ -1,15 +1,6 @@
-import { useEffect, useRef } from 'react';
-import { CSSTransition } from 'react-transition-group';
 import './toggleButton.css';
 
 export default function ToggleButton({plan, setPlan}){
-
-    const buttonRef =  useRef();
-
-    useEffect(()=>{
-        buttonRef.current.style.left = plan === 'monthly'?'0px':'unset';
-        buttonRef.current.style.right = plan === 'monthly'?'unset':'0px';
-    }, [plan]);
 
     function handleToggle(){
         if(plan === 'monthly')
@@ -20,7 +11,7 @@ export default function ToggleButton({plan, setPlan}){
 
     return(
         <div onClick={handleToggle} className='toggleContainer'>
-            <div ref={buttonRef} className='toggleButton'></div>
+            <div style={{transform:plan === "monthly"?'translateX(0px)':'translateX(100%)'}} className='toggleButton'></div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ export default function PriceCards({data}){
         <div className='priceCards'>
             {
                 data.map((data, index) => {
-                    return <PriceCard key={index} period={data.period} type={data.type} price={data.price} slug={data.slug} features={data.features} isPrimary={data.type === 'Business'}/>
+                    return <PriceCard key={index+data.type+data.price} period={data.period} type={data.type} price={data.price} slug={data.slug} features={data.features} isPrimary={data.type === 'Business'}/>
                 })
             }
         </div>

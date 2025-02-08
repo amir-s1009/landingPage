@@ -1,11 +1,21 @@
 import './priceCard.css';
 
 import {Button} from '..';
+import { useEffect, useState } from 'react';
 
 export default function PriceCard({period, type, price, slug, features, isPrimary}){
+
+    const [opacity, setOpacity] = useState(0);
+
+    useEffect(()=>{
+        setOpacity(1);
+
+        //return ()=> setOpacity(0);
+    }, [])
+
     return(
         isPrimary?
-        <div className='card primary-card'>
+        <div style={{opacity}} className='card primary-card'>
             
             <h2 className='type'>{type}</h2>
             {
@@ -21,7 +31,7 @@ export default function PriceCard({period, type, price, slug, features, isPrimar
             <Button isPrimary={false} text={type === 'Business'?'Contact Us':'start 7 day free trial'} />
         </div>
         :
-        <div className='card secondary-card'>
+        <div style={{opacity}} className='card secondary-card'>
             
             <h2 className='type'>{type}</h2>
             {
